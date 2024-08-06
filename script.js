@@ -1,1 +1,1 @@
-var main = "D"
+var main = "D";
