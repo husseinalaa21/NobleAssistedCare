@@ -9,6 +9,18 @@ body {
 }
 
 .header {
+    background: #ECF9FF;
+    padding: 0 0 10px 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+.header_main{
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -40,9 +52,20 @@ body {
 
 .menu a {
     padding: 15px;
+    cursor: pointer;
+}
+
+.menu a:hover {
+    background-color: #22a1a8;
+    color: #ECF9FF;
 }
 .menu .selected{
     text-decoration-style: wavy;
+    color: #22a1a8;
+}
+.menu .selected:hover{
+    background-color: #ECF9FF;
+    color: #22a1a8;
 }
 
 .main {
@@ -53,9 +76,9 @@ body {
 
 .main_text {
     position: absolute;
-    top: 45px;
+    top: 40px;
     left: 16px;
-    z-index: 1000;
+    z-index: 80;
     padding: 10px;
 }
 
@@ -107,7 +130,7 @@ body {
     width: 100%;
     max-width: 1100px;
     bottom: -3px;
-    z-index: 100;
+    z-index: 60;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -123,6 +146,24 @@ body {
     top: 170px;
     margin: auto;
     right: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.container h2 {
+    font-size: 30px;
+}
+
+.middle {
+    padding: 20px;
+    font-size: 24px;
+}
+
+.title_care {
+    padding: 20px;
+    font-size: 30px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -141,13 +182,14 @@ body {
     .care-features_phone {
       display: block !important;
       position: relative;
-      height: 290px;
+      height: 280px;
       overflow: hidden;
     }
     .care-features_phone_front {
         display: grid;
         grid-template-columns: auto auto;
         position: absolute;
+        margin-top: 8px;
     }
     .care-features_phone_back {
         background: url(./images/ser.png);
@@ -160,8 +202,13 @@ body {
     }
 
     .feature {
-        margin: 10px !important;
-        width: 100% !important;
+        margin: 6px !important;
+        max-width: 1000px !important;
+        z-index: 1000;
+    }
+
+    .feature .a {
+        padding: 26px 16px 16px 16px;
     }
 
     .main_picure {

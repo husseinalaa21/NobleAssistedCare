@@ -11,20 +11,22 @@
     <title> NobleAssistedCare | Home </title>
 </head>
 <body>
+    
     <div class="note"> <i class="fa fa-phone" style="font-size:24px"></i> <p>Hava Question? Call us at (248) 269-3296 </p></div>
     
-
-    <div class="header">
-        <div class="logo">
-            <img src="" alt="">
-            <h1>NobleAssistedCare</h1>
-        </div>
-        <div class="menu">
-            <a class="selected">Home</a>
-            <a>About Us</a>
-            <a>Contact Us</a>
-        </div>
-        <div class="menu_phone" style="display: none;">
+    <div class="header" id="myHeader">
+        <div class="header_main">
+            <div class="logo">
+                <img src="" alt="">
+                <h1>NobleAssistedCare</h1>
+            </div>
+            <div class="menu">
+                <a class="selected">Home</a>
+                <a>About Us</a>
+                <a>Contact Us</a>
+            </div>
+            <div class="menu_phone" style="display: none;">
+            </div>
         </div>
     </div>
       
@@ -120,10 +122,18 @@
         </div>
         <div class="care-features_phone_back"></div>
         </div>
+        
+
+        <div class="middle">
+            " Noble Assisted Care is family operated and licensed assisted living facility. We take pride in mastering the care giving services, designed for seniors who want to live in a private room with access to home made meals, recreational and social activities, housekeeping and would like to live amongst other retirees. "
+        </div>
 
         <div class="container">
             <h2>Let Us Take Care of Your Loved Ones:</h2>
-            <p>Experienced Caregivers - Friendly and skilled helpers</p>
+            <div>
+                <p>Experienced Caregivers - Friendly and skilled helpers</p>
+
+            </div>
             <p>Homemade Meals - Fresh and tasty food made just for you</p>
             <p>Safe & Enjoyable - A secure and pleasant place to live</p>
             <p>Medication Help - Keeping track of medicine for you</p>
@@ -134,13 +144,25 @@
         <div>
 
         </div>
-        <p>
-            Noble Home Care is family operated and licensed assisted living facility. We take pride in mastering the care giving services, designed for seniors who want to live in a private room with access to home made meals, recreational and social activities, housekeeping and would like to live amongst other retirees.
-        </p>
     </div>
     
     <div class="end">
 
     </div>
+    
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
 </body>
 </html>
