@@ -1,3 +1,173 @@
-.main {
-    color: aquamarine;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: #ECF9FF;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: "Caveat", cursive;
+    font-size: 40px;
+    color: #00bbd4;
+}
+
+.note {
+    display: flex;
+    background-color: #3AB0FF;
+    padding: 22px;
+    color: aliceblue;
+    align-items: center;
+}
+
+.note p {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.menu {
+    font-size: 20px;
+}
+
+.menu a {
+    padding: 15px;
+}
+.menu .selected{
+    text-decoration-style: wavy;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main_text {
+    position: absolute;
+    top: 45px;
+    left: 16px;
+    z-index: 1000;
+    padding: 10px;
+}
+
+.main_text h1 {
+    font-size: 34px;
+
+}
+
+.main_text h2 {
+    font-size: 24px;
+
+}
+
+.care-features_web {
+    margin-top: 50px;
+}
+
+.feature {
+    max-width: 300px;
+    margin-top: 15px;
+    border-radius: 3px;
+    background-color: #ECF9FF;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    overflow: hidden;
+}
+
+.feature .a {
+    background-color: #00bbd4;
+    padding: 20px;
+    color: #ECF9FF;
+    padding-top: 28px;
+}
+.feature .b {
+    padding: 20px;
+}
+
+.feature h3 {
+    margin-bottom: 8px;
+    color: #22a1a8;
+}
+.main_picure {
+    width: 100%;
+    min-height: 750px;
+    float: right;
+}
+.main_picure img{
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    bottom: -3px;
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    float: right;
+}
+.img_shadow {
+    background-color: #00bbd4;
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    position: absolute;
+    border-top-left-radius: 1000px;
+    top: 170px;
+    margin: auto;
+    right: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .menu {
+        display: none;
+    }
+    .menu_phone {
+        display: block;
+    }
+    .main_picure {
+        margin-top: 120px;
+    }
+    .care-features_web {
+        display: none;
+    }
+    .care-features_phone {
+      display: block !important;
+      position: relative;
+      height: 290px;
+      overflow: hidden;
+    }
+    .care-features_phone_front {
+        display: grid;
+        grid-template-columns: auto auto;
+        position: absolute;
+    }
+    .care-features_phone_back {
+        background: url(./images/ser.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* Add the blur effect */
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        height: 100%;
+    }
+
+    .feature {
+        margin: 10px !important;
+        width: 100% !important;
+    }
+
+    .main_picure {
+        min-height: 360px;
+    }
+    .main_text {
+        top: 0 !important;
+    }
+  }
