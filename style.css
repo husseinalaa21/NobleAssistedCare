@@ -11,6 +11,8 @@ body {
 .header {
     background: #ECF9FF;
     padding: 0 0 10px 0;
+    border: 0;
+    border-bottom: 1px solid #dbecf5;
 }
 
 .sticky {
@@ -27,9 +29,14 @@ body {
     align-items: center;
 }
 
+.logo {
+    margin-top: -10px;
+}
+
 .logo h1 {
-    font-family: "Caveat", cursive;
-    font-size: 40px;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    font-size: 32px;
     color: #00bbd4;
 }
 
@@ -46,26 +53,83 @@ body {
     font-size: 18px;
 }
 
-.menu {
+.menuX {
     font-size: 20px;
 }
 
-.menu a {
+.menuX a {
     padding: 15px;
     cursor: pointer;
 }
 
-.menu a:hover {
+.menuX a:hover {
     background-color: #22a1a8;
     color: #ECF9FF;
 }
-.menu .selected{
+.menuX .selected{
     text-decoration-style: wavy;
     color: #22a1a8;
 }
-.menu .selected:hover{
+.menuX .selected:hover{
     background-color: #ECF9FF;
     color: #22a1a8;
+}
+
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+  }
+  .line {
+    fill: none;
+    stroke: black;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  
+.menu_list {
+    border: 0;
+    border-top: 1px solid #fcfcfc;
+    margin: 0px 20px 0px 20px;
+    padding: 10px 0px 10px 0px;
+}
+.menu_list div {
+    margin: 10px 20px 10px 20px;
+}
+.menu_list a{
+    color: rgb(32, 37, 43);
+    font-size: 18px;
 }
 
 .main {
@@ -167,14 +231,17 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
-    .menu {
+    .body {
+        margin-top: 20px;
+    }
+    .menuX {
         display: none;
     }
-    .menu_phone {
-        display: block;
+    .menuY {
+        display: block !important;
     }
     .main_picure {
-        margin-top: 120px;
+        margin-top: 140px;
     }
     .care-features_web {
         display: none;
@@ -204,7 +271,7 @@ body {
     .feature {
         margin: 6px !important;
         max-width: 1000px !important;
-        z-index: 1000;
+        z-index: 90;
     }
 
     .feature .a {
