@@ -5,11 +5,11 @@
 
 body {
     font-family: "Outfit", sans-serif;
-    background-color: #ECF9FF;
+    background-color: #f3fbff;
 }
 
 .header {
-    background: #ECF9FF;
+    background: #f3fbff;
     padding: 0 0 10px 0;
     border: 0;
     border-bottom: 1px solid #dbecf5;
@@ -167,7 +167,7 @@ body {
     max-width: 300px;
     margin-top: 15px;
     border-radius: 3px;
-    background-color: #ECF9FF;
+    background-color: #f3fbff;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     display: flex;
     overflow: hidden;
@@ -180,7 +180,7 @@ body {
     padding-top: 28px;
 }
 .feature .b {
-    padding: 20px;
+    padding: 16px;
 }
 
 .feature h3 {
@@ -255,34 +255,12 @@ body {
     }
     .care-features_phone {
       display: block !important;
-      position: relative;
-      height: 280px;
-      overflow: hidden;
-    }
-    .care-features_phone_front {
-        display: grid;
-        grid-template-columns: auto auto;
-        position: absolute;
-        margin-top: 8px;
-    }
-    .care-features_phone_back {
-        background: url(./images/ser.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        /* Add the blur effect */
-        filter: blur(8px);
-        -webkit-filter: blur(8px);
-        height: 100%;
     }
 
     .feature {
-        margin: 6px !important;
-        max-width: 1000px !important;
+        margin: 10px 16px 10px 16px !important;
+        max-width: 100% !important;
         z-index: 90;
-    }
-
-    .feature .a {
-        padding: 26px 16px 16px 16px;
     }
 
     .main_picure {
