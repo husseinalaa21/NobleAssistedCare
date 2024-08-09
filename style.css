@@ -390,9 +390,9 @@ body {
 .gallery-item {
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    margin: 5px;
 }
 
 /* Remove hover effects */
@@ -517,6 +517,9 @@ body {
     }
     .container_a img {
         border-radius: 0 0 6px 6px !important;
+    }
+    .middle_head h2{
+        font-size: 24px !important;
     }
   }
 
