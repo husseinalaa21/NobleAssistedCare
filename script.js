@@ -26,3 +26,17 @@ function myFunction() {
         mls = false
     }
 }
+function openModal(img) {
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-image');
+  const captionText = document.getElementById('caption');
+  
+  modal.style.display = 'flex';
+  modalImg.src = img.src;
+  captionText.innerHTML = img.alt;
+}
+
+function closeModal() {
+  const modal = document.getElementById('modal');
+  modal.style.display = 'none';
+}

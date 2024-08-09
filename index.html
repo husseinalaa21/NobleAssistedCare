@@ -100,16 +100,16 @@
         </div>
 
         <div class="care-features_phone" style="display: none;">
-            <div class="feature">
+            <div class="featureX">
                 <div class="a">
-                    <i class="fa fa-group" style="font-size:20px"></i>
+                    <div><i class="fa fa-group" style="font-size:20px"></i></div>
                 </div>
                 <div class="b">
                     <h3>Expert Team</h3>
                     <p>Dedicated and experienced caregivers providing the best care</p>
                 </div>
             </div>
-            <div class="feature">
+            <div class="featureX">
                 <div class="a">
                     <i class="fa fa-clock-o" style="font-size:20px"></i>
                 </div>
@@ -118,7 +118,7 @@
                     <p>Always available for support, care, and assistance</p>
                 </div>
             </div>
-            <div class="feature">
+            <div class="featureX">
                 <div class="a">
                     <i class="fa fa-dollar" style="font-size:20px"></i>
                 </div>
@@ -127,7 +127,7 @@
                     <p>High-quality care that won’t strain your finances</p>
                 </div>
             </div>
-            <div class="feature">
+            <div class="featureX">
                 <div class="a">
                     <i class="fa fa-check-circle" style="font-size:20px"></i>
                 </div>
@@ -137,24 +137,89 @@
                 </div>
             </div>
         </div>
+
         
+  <!-- about section -->
+
+    <div class="about_section">
+        <div class="container_b box">
+            <div class="heading_container ">
+              <h2>
+                WHO ARE WE?
+              </h2>
+            </div>
+            <p>
+                 Noble Assisted Care is family operated and licensed assisted living facility. We take pride in mastering the care giving services, designed for seniors who want to live in a private room with access to home made meals, recreational and social activities, housekeeping and would like to live amongst other retirees.
+            </p>
+            <div class="btn-box">
+              <a href="">
+                Contact US
+              </a>
+            </div>
+        </div>
+        <div class="container_a box">
+          <div class="img_container">
+            <div class="img-box">
+              <img src="./images/show2.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+    </div>
 
         <div class="middle">
-            " Noble Assisted Care is family operated and licensed assisted living facility. We take pride in mastering the care giving services, designed for seniors who want to live in a private room with access to home made meals, recreational and social activities, housekeeping and would like to live amongst other retirees. "
-        </div>
-
-        <div class="container">
-            <h2>Let Us Take Care of Your Loved Ones:</h2>
-            <div>
-                <p>Experienced Caregivers - Friendly and skilled helpers</p>
-
+            <div class="middle_head">
+                <h2>Let Us Take Care of Your Loved Ones</h2>
             </div>
-            <p>Homemade Meals - Fresh and tasty food made just for you</p>
-            <p>Safe & Enjoyable - A secure and pleasant place to live</p>
-            <p>Medication Help - Keeping track of medicine for you</p>
-            <p>Private Rooms - Comfortable and private spaces</p>
-            <p>Laundry & Cleaning - Keeping everything neat and clean</p>
-            <h3>We make sure everyone feels right at home.</h3>
+            
+            <div class="gallery-container">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="./images/show3.webp" alt="Noble Assisted Care" onclick="openModal(this)">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/show4.jpeg" alt="Noble Assisted Care" onclick="openModal(this)">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/show5.jpeg" alt="Noble Assisted Care" onclick="openModal(this)">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="./images/show6.jpeg" alt="Noble Assisted Care" onclick="openModal(this)">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal -->
+            <div id="modal" class="modal">
+                <div class="modal-content-wrapper">
+                    <span class="modal-close" onclick="closeModal()">&times;</span>
+                    <img id="modal-image" class="modal-content">
+                    <button class="modal-close-btn" onclick="closeModal()">Close</button>
+                    <div id="caption" class="modal-caption"></div>
+                </div>
+            </div>
+            
+            <div class="care-container">
+                <div class="care-item">
+                    <h3>Private Rooms for Comfort and Independence</h3>
+                    <p>Our facility provides private rooms that offer the perfect blend of comfort and independence, ensuring that your loved ones feel at home while receiving the care they need.</p>
+                </div>
+                <div class="care-item">
+                    <h3>Nutritious Home-Cooked Meals</h3>
+                    <p>We prepare daily, nutritious home-cooked meals tailored to meet the dietary needs and preferences of our residents, promoting their overall health and well-being.</p>
+                </div>
+                <div class="care-item">
+                    <h3>Engaging Recreational and Social Activities</h3>
+                    <p>Our diverse range of recreational and social activities keeps residents active, engaged, and socially connected, contributing to their mental and emotional well-being.</p>
+                </div>
+                <div class="care-item">
+                    <h3>Comprehensive Housekeeping Services</h3>
+                    <p>We take care of all household chores with our thorough housekeeping services, allowing your loved ones to enjoy a clean, well-maintained living environment without the hassle.</p>
+                </div>
+                <div class="care-item">
+                    <h3>Supportive Community Living</h3>
+                    <p>At Noble Assisted Care, your loved ones will be part of a warm and supportive community where they can form meaningful connections and enjoy the company of fellow retirees.</p>
+                </div>
+            </div>
         </div>
         <div>
 
@@ -162,7 +227,19 @@
     </div>
     
     <div class="end">
-
+        <div class="contatc_form">
+            <div class="link"> <a href=""> About Us </a> </div>
+            <div class="link"> <a href=""> Contact Us </a> </div>
+        </div>
+        <div class="socialmedia">
+            <div class="link"> <a href=""> Facebook </a> </div>
+            <div class="link"> <a href=""> Twitter </a> </div>
+            <div class="link"> <a href=""> Facebook </a> </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        <p>Copyright 2024 by NobleAssistedCare. </p>
+        <p>All Rights Reserved. </p>
     </div>
     <script src="script.js"></script>
 </body>
