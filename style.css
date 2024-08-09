@@ -277,7 +277,7 @@ body {
   .contatc_form div, .socialmedia div{
     padding: 10px;
   }
-main_picure
+
   .copyrights {
     padding: 20px;
     background-color: rgb(57, 60, 66);
@@ -368,13 +368,92 @@ main_picure
 .care-container {
     padding: 10px;
 }
+/* Care Container Styles */
+.care-container {
+    display: flex;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Line Container Styles */
+.line-container {
+    position: relative;
+    width: 30px; /* Adjust width as needed */
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Vertical Line Styles */
+.vertical-line {
+    position: relative;
+    width: 2px;
+    background-color: #00bbd443;
+    height: 100%; /* Full height of the line container */
+}
+
+/* Dots on the Line */
+.dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #00bbd4;
+    border-radius: 50%;
+    left: -4px;
+}
+
+/* Care Items Styles */
 
 .care-item {
-    padding: 10px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.care-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Care Content Styles */
+.care-content {
+    position: relative;
 }
 
 .care-item h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.care-item p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+.care-item h3 {
     font-size: 24px;
+}
+
+/* Icon Container Styles */
+.icon-container {
+    font-size: 24px; /* Adjust icon size */
+    color: #333; /* Adjust icon color */
+    top: 50%; /* Center the icon vertically */
+    display: flex;
+}
+
+.icon-container i {
+    padding-right: 15px;
+    font-size: 18px;
+    margin-top: 4px;
 }
 
 /* Gallery Styles */

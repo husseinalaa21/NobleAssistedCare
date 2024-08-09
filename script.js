@@ -40,3 +40,15 @@ function closeModal() {
   const modal = document.getElementById('modal');
   modal.style.display = 'none';
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const verticalLine = document.querySelector('.vertical-line');
+  const careItems = document.querySelectorAll('.care-item');
+  
+  careItems.forEach((item, index) => {
+      const dot = document.createElement('span');
+      dot.classList.add('dot');
+      dot.style.top = `${item.offsetTop + (item.offsetHeight / 2) - 5}px`; // Center the dot on the section
+      verticalLine.appendChild(dot);
+  });
+});
