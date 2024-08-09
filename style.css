@@ -196,6 +196,7 @@ body {
 .main_picure img{
     position: relative;
     width: 100%;
+    min-width: 600px;
     max-width: 1100px;
     bottom: -3px;
     z-index: 60;
@@ -276,7 +277,7 @@ body {
   .contatc_form div, .socialmedia div{
     padding: 10px;
   }
-
+main_picure
   .copyrights {
     padding: 20px;
     background-color: rgb(57, 60, 66);
@@ -357,9 +358,10 @@ body {
     content: '';
     position: absolute;
     bottom: 0;
-    right: 0;
-    width: 40%; /* Half the width of the text */
-    height: 4px; /* Line thickness */
+    right: 10px;
+    width: 30%; /* Half the width of the text */
+    max-width: 120px;
+    height: 6px; /* Line thickness */
     background-color: #00bbd4; /* Line color */
 }
 
