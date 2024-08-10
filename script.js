@@ -52,3 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
       verticalLine.appendChild(dot);
   });
 });
+
+var picure_id = "pic2"
+function picure_select(a){
+  document.getElementById(picure_id).className = "about_picures"
+  a.className = "about_picures picure_selected"
+  picure_id = a.id
+}
