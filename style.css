@@ -61,7 +61,7 @@ body {
   padding: 6px;
 }
 
-.menuX a {
+.menuX a , .menu_list a{
   cursor: pointer;
   font-size: 18px;
   padding: 10px 14px 10px 14px;
@@ -70,22 +70,26 @@ body {
   border-radius: 1000px;
 }
 
-.menuX a:hover {
+.menuX a:hover , .menu_list a:hover{
   background-color: #22a1a8;
   color: #ECF9FF;
 }
-.menuX .selected{
+.menuX .selected, .menu_list .selected{
 text-decoration: underline;
   text-decoration-style: wavy;
   color: #22a1a8;
 }
-.menuX .selected:hover{
+.menuX .selected:hover , .menu_list .selected:hover{
   background-color: #f3fbff;
   color: #22a1a8;
 }
-.menuX .selected_aa { 
+.menuX .selected_aa , .menu_list .selected_aa{ 
   background-color: #22a1a8;
   color: #ECF9FF;
+}
+
+.menu_list {
+  justify-content: space-around;
 }
 
 .menu {
@@ -781,11 +785,6 @@ textarea.input {
 .main_about h1 {
   font-size: 30px;
   margin-bottom: 3px;
-}zw
-.main_about h2 {
-  font-size: 25px;
-  display: inline-block;
-  position: relative;
 }
 .about_continer {
   margin-top: 20px;
@@ -824,6 +823,11 @@ textarea.input {
   border-radius: 1000px;
 }
 
+.main_about h2 {
+  font-size: 25px;
+  display: inline-block;
+  position: relative;
+}
 .main_about h2::after {
   content: '';
   position: absolute;
@@ -859,7 +863,8 @@ textarea.input {
   opacity:1;
 }
 .picure_selected {
-  height: 300px;
+  height: 100%;
+  max-height: 350px;
   margin: 0;
   padding: 0;
   border: 0;
