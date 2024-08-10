@@ -149,6 +149,7 @@ text-decoration: underline;
 }
 
 .body {
+  overflow: hidden;
 }
 
 .main {
