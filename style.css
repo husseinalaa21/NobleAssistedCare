@@ -89,7 +89,12 @@ text-decoration: underline;
 }
 
 .menu_list {
-  justify-content: space-around;
+  grid-template-columns: auto auto;
+}
+
+.menu_list div {
+  width: 100%;
+  text-align: center;
 }
 
 .menu {
@@ -942,6 +947,12 @@ textarea.input {
   }
 }
 
+
+@media only screen and (min-width: 840px) {
+  .menu_list {
+    display: none !important;
+  }
+}
 
 @media only screen and (max-width: 840px) {
 
