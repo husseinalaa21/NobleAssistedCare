@@ -19,7 +19,7 @@ function myFunction() {
     element.setAttribute('aria-expanded', element.classList.contains('opened'));
     
     if(mls == false){
-        menu_list.style.display = "grid"
+        menu_list.style.display = "block"
         mls = true
     } else {
         menu_list.style.display = "none"
