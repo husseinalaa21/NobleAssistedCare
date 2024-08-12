@@ -43,7 +43,7 @@ function closeModal() {
 
 document.addEventListener('DOMContentLoaded', () => {
   const verticalLine = document.querySelector('.vertical-line');
-  const careItems = document.querySelectorAll('.care-item');
+  const careItems = document.querySelectorAll('.care-item_a');
   
   careItems.forEach((item, index) => {
       const dot = document.createElement('span');

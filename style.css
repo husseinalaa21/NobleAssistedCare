@@ -51,15 +51,18 @@ body {
 .note {
   display: flex;
   align-items: center;
-  background-color: #007bff; /* Light background color */
+  background-color: #007bff;
+  /* Light background color */
   padding: 15px 20px;
   font-size: 18px;
-  color: #dbecf5; /* Text color */
+  color: #dbecf5;
+  /* Text color */
 }
 
 .note i {
   font-size: 18px;
-  color: #dbecf5; /* Icon color */
+  color: #dbecf5;
+  /* Icon color */
   margin-right: 15px;
 }
 
@@ -437,7 +440,7 @@ body {
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.05);
 }
 
-.btn-box a{
+.btn-box a {
   display: inline-block;
   padding: 10px 35px;
   background-color: #00bbd4;
@@ -463,33 +466,80 @@ body {
 .container_b p {
   padding: 0px 24px 0 24px;
   font-size: 18px;
+  line-height: 1.6;
 }
 
-.container_b p a{
+.container_b p a {
   color: #00bbd4;
 }
 
-.middle_head {
-  text-align: center;
+.description {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+  padding: 0px 0px 40px 0px;
 }
 
-.middle_head h2 {
+.description:after {
+  position: absolute;
+  content: '';
+  bottom: 0px;
+  right: -300px;
+  width: 100%;
+  height: 100%;
+  /* Line thickness */
+  background-color: #00bbd421;
+  /* Line color */
+  border-radius: 1000px;
+}
+
+.description h2 {
   display: inline-block;
   position: relative;
   font-size: 24px;
-  padding: 10px;
+  padding: 16px 20px 10px 20px;
   font-size: 28px;
-  text-align: center;
   margin: 20px auto 20px auto;
-  text-align: center;
+  text-align: left;
 }
 
-.middle_head h2::after {
+.description h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 40%;
+  top: -10px;
+  /* Half the width of the text */
+  max-width: 320px;
+  height: 6px;
+  /* Line thickness */
+  background-color: #00bbd4;
+  /* Line color */
+}
+
+.description h2 mark {
+  background-color: none;
+  background: none;
+  color: #00bbd4;
+}
+
+.description p {
+  padding: 0px 10px 10px 10px;
+  font-size: 20px;
+  position: relative;
+  line-height: 1.6;
+}
+
+
+.description p::after {
   content: '';
   position: absolute;
   bottom: 0;
   right: 10px;
   width: 30%;
+  bottom: -10px;
   /* Half the width of the text */
   max-width: 120px;
   height: 6px;
@@ -541,17 +591,9 @@ body {
 
 /* Care Items Styles */
 
-.care-item {
-  border-radius: 8px;
+.care-item_a,
+.care-item_b {
   padding: 20px;
-  margin-bottom: 20px;
-  position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.care-item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Care Content Styles */
@@ -559,20 +601,19 @@ body {
   position: relative;
 }
 
-.care-item h3 {
-  font-family: 'Arial', sans-serif;
-  font-size: 1.4em;
+.care-item_a h3,
+.care-item_b h3 {
+  font-size: 24px;
   color: #333;
   margin-bottom: 10px;
 }
 
-.care-item p {
-  font-family: 'Arial', sans-serif;
-  font-size: 1em;
+.care-item_a p,
+.care-item_b p {
+  font-size: 18px;
   color: #666;
   line-height: 1.6;
 }
-
 
 .care-item h3 {
   font-size: 24px;
@@ -597,22 +638,21 @@ body {
 
 /* Gallery Styles */
 .gallery-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow-x: scroll;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 500px 500px 500px 500px;
 }
 
 .gallery-item {
   position: relative;
   overflow: hidden;
-  border-radius: 6px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  margin: 5px;
 }
 
 /* Remove hover effects */
@@ -1041,20 +1081,22 @@ textarea.input {
   padding: 15px;
 }
 
-.contact_basic h2{
+.contact_basic h2 {
   margin-bottom: 24px;
 }
 
 .info {
   margin-bottom: 20px;
 }
-.info h3{
+
+.info h3 {
   font-size: 18px;
   padding: 0px 16px 0px 16px;
   position: relative;
   top: 10px;
 }
-.info h3 mark{
+
+.info h3 mark {
   font-size: 14px;
   background-color: #00bbd400;
   color: #555;
@@ -1074,7 +1116,7 @@ textarea.input {
   border: 0;
   border-right: 3px solid #00bbd4;
   margin-right: 20px;
-  
+
   margin-top: 20px;
   font-size: 22px;
   position: relative;
@@ -1096,7 +1138,7 @@ textarea.input {
   border-radius: 1000px;
 }
 
-.send button{
+.send button {
   margin: auto;
   margin-top: 20px;
   width: 100%;
@@ -1116,7 +1158,8 @@ textarea.input {
   top: 10px;
   color: #555;
 }
-.message textarea{
+
+.message textarea {
   width: 90%;
   height: 300px;
   padding: 20px;
