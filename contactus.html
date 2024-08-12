@@ -1,339 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Yellowtail&display=swap"
+        rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Outfit:wght@100..900&display=swap');
-        </style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Yellowtail&display=swap');
+    </style>
 
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> NobleAssistedCare | Home </title>
+
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- MAIN INFO -->
+    <title> Noble Assisted Care | Home </title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
 </head>
+
 <body>
-    
-    <div class="note"> <i class="fa fa-phone" style="font-size:24px"></i> <p>Hava Question? Call us at (248) 269-3296 </p></div>
-    
+    <div class="note">
+        <i class="fas fa-phone"></i>
+        <p>Have a question? Call us at <a href="tel:+12482693296">(248) 269-3296</a></p>
+    </div>
+
     <div class="header" id="myHeader">
         <div class="header_main">
             <div class="logo">
-                <img src="" alt="">
-                <h1>NobleAssistedCare</h1>
+                <img src="" alt="" width="30px">
+                <h1>Noble Assisted Care</h1>
             </div>
             <div class="menuX">
-                <div><a href="#" class="menu_item selected">Home</a></div>
-                <div><a href="#aboutus" class="menu_item">About Us</a></div>
-                <div><a href="#contactus" class="menu_item">Contact Us</a></div>
-                <div><a href="#" class="menu_item">FAQ</a></div>
+                <div><a href="/NobleAssistedCare/" class="menu_item">Home</a></div>
+                <div><a href="#" class="menu_item selected">About Us</a></div>
+                <div><a href="/NobleAssistedCare/#contactus" class="menu_item">Contact Us</a></div>
+                <div><a href="#" class="menu_item selected_aa">FAQ</a></div>
             </div>
             <div class="menuY" style="display: none; margin-top: 8px;">
                 <button class="menu" onclick="openlist(this)" aria-label="Main Menu">
                     <svg width="44" height="44" viewBox="0 0 100 100">
-                      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                      <path class="line line2" d="M 20,50 H 80" />
-                      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
                     </svg>
-                  </button>
+                </button>
             </div>
         </div>
         <div class="menu_list" id="menu_list" style="display: none;">
-            <div><a href="#" class="menu_item selected">Home</a></div>
-            <div><a href="#aboutus" class="menu_item">About Us</a></div>
-            <div><a href="#contactus" class="menu_item">Contact Us</a></div>
-            <div><a href="#" class="menu_item">FAQ</a></div>
+            <div class="menu_list_in">
+                <div><a href="/NobleAssistedCare/" class="menu_item">Home</a></div>
+                <div><a href="#" class="menu_item selected">About Us</a></div>
+                <div><a href="/NobleAssistedCare/#contactus" class="menu_item">Contact Us</a></div>
+                <div><a href="#" class="menu_item selected_aa">FAQ</a></div>
+            </div><!-- Social Media Bar -->
+            <div class="social_bar">
+                <div>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="number_bar">
+                <a href="tel:+12482693296">
+                    <i class="fas fa-phone-alt"></i> (248) 269-3296
+                </a>
+            </div>
         </div>
-        
+
     </div>
-      
+
     <div class="body">
-        <div class="main">
-            <div class="main_text">
-                <h1>Seniors Assisted Living</h1>
-                <h2>A place you can call Home.</h2>
-                <div class="care-features_web">
-                    <div class="feature">
-                        <div class="a">
-                            <i class="fa fa-group" style="font-size:20px"></i>
+        <div class="contact_form">
+            <div class="contact_ab">
+                <div class="contact_a">
+                    <h1> Contact US</h1>
+                    <p> Contact Diana Pantea, Owner & Admissions Coordinator </p>
+
+                    <div class="info">
+                        <div class="information">
+                            <i class="fas fa-map-marker-alt"></i> &nbsp &nbsp
+
+                            <p> 1150 Bradley Dr, Troy, Mi 48085 </p>
                         </div>
-                        <div class="b">
-                            <h3>Expert Team</h3>
-                            <p>Dedicated and experienced caregivers providing the best care</p>
+                        <div class="information">
+                            <i class="fas fa-envelope"></i> &nbsp &nbsp
+                            <p>info@nobleassistedcare.com</p>
                         </div>
-                    </div>
-                    <div class="feature">
-                        <div class="a">
-                            <i class="fa fa-clock-o" style="font-size:20px"></i>
-                        </div>
-                        <div class="b">
-                            <h3>24/7 Care</h3>
-                            <p>Always available for support, care, and assistance</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <div class="a">
-                            <i class="fa fa-dollar" style="font-size:20px"></i>
-                        </div>
-                        <div class="b">
-                            <h3>Budget-Friendly</h3>
-                            <p>High-quality care that won’t strain your finances</p>
-                        </div>
-                    </div>
-                    <div class="feature">
-                        <div class="a">
-                            <i class="fa fa-check-circle" style="font-size:20px"></i>
-                        </div>
-                        <div class="b">
-                            <h3>Quality Assured</h3>
-                            <p>Top-notch standards for comfort and well-being</p>
+                        <div class="information">
+                            <i class="fas fa-phone"></i>&nbsp&nbsp
+                            <p>(248) 269-3296</p>
                         </div>
                     </div>
                 </div>
-                
-            </div>
-            <div class="main_picure">
-                <div class="img_shadow"></div>
-                <img src="./images/main-2.png" alt="Main Show" >
-            </div>
-        </div>
+                <div class="contact_b" style="display: none;">
+                    <h1> Contact US</h1>
+                    <p> Contact Diana Pantea, Owner & Admissions Coordinator </p>
 
-        <div class="care-features_phone" style="display: none;">
-            <div class="featureX">
-                <div class="a">
-                    <div><i class="fa fa-group" style="font-size:20px"></i></div>
-                </div>
-                <div class="b">
-                    <h3>Expert Team</h3>
-                    <p>Dedicated and experienced caregivers providing the best care</p>
-                </div>
-            </div>
-            <div class="featureX">
-                <div class="a">
-                    <i class="fa fa-clock-o" style="font-size:20px"></i>
-                </div>
-                <div class="b">
-                    <h3>24/7 Care</h3>
-                    <p>Always available for support, care, and assistance</p>
-                </div>
-            </div>
-            <div class="featureX">
-                <div class="a">
-                    <i class="fa fa-dollar" style="font-size:20px"></i>
-                </div>
-                <div class="b">
-                    <h3>Budget-Friendly</h3>
-                    <p>High-quality care that won’t strain your finances</p>
-                </div>
-            </div>
-            <div class="featureX">
-                <div class="a">
-                    <i class="fa fa-check-circle" style="font-size:20px"></i>
-                </div>
-                <div class="b">
-                    <h3>Quality Assured</h3>
-                    <p>Top-notch standards for comfort and well-being</p>
-                </div>
-            </div>
-        </div>
+                    <div class="info">
+                        <div class="information">
+                            <i class="fas fa-map-marker-alt"></i> &nbsp &nbsp
 
-        
-  <!-- about section -->
-
-    <div class="about_section" id="aboutus">
-        <div class="container_b box">
-            <div class="heading_container ">
-              <h2>
-                WHO ARE WE?
-              </h2>
-            </div>
-            <p>
-                 Noble Assisted Care is family operated and licensed assisted living facility. We take pride in mastering the care giving services, designed for seniors who want to live in a private room with access to home made meals, recreational and social activities, housekeeping and would like to live amongst other retirees.
-            </p>
-            <div class="btn-box">
-              <a href="">
-                Contact US
-              </a>
-            </div>
-        </div>
-        <div class="container_a box">
-          <div class="img_container">
-            <div class="img-box">
-              <img src="./images/show2.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-    </div>
-
-        <div class="middle">
-            <div class="middle_head">
-                <h2>Let Us Take Care of Your Loved Ones</h2>
-            </div>
-            
-            <div class="gallery-container">
-                <div class="gallery">
-                    <div class="gallery-item">
-                        <img src="./images/show3.webp" alt="Noble Assisted Care" onclick="openModal(this)">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="./images/show4.jpeg" alt="Noble Assisted Care" onclick="openModal(this)">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="./images/show5.jpeg" alt="Noble Assisted Care" onclick="openModal(this)">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="./images/show6.jpeg" alt="Noble Assisted Care" onclick="openModal(this)">
+                            <p> 1150 Bradley Dr, Troy, Mi 48085 </p>
+                        </div>
+                        <div class="information">
+                            <i class="fas fa-envelope"></i> &nbsp &nbsp
+                            <p>info@nobleassistedcare.com</p>
+                        </div>
+                        <div class="information">
+                            <i class="fas fa-phone"></i>&nbsp&nbsp
+                            <p>(248) 269-3296</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Add Font Awesome CDN to your <head> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-<!-- Modal -->
-<div id="modal" class="modal">
-    <div class="modal-content-wrapper">
-        <span class="modal-close" onclick="closeModal()">&times;</span>
-        <img id="modal-image" class="modal-content">
-        <button class="modal-close-btn" onclick="closeModal()">Close</button>
-        <div id="caption" class="modal-caption"></div>
-    </div>
-</div>
-
-<div class="care-container">
-    <div class="line-container">
-        <div class="vertical-line">
-            <!-- Dots will be positioned dynamically -->
-        </div>
-    </div>
-    <div class="care-items">
-        <div class="care-item">
-            <div class="icon-container">
-                <i class="fas fa-bed"></i> 
-                <h3>Private Rooms </h3>
-            </div>
-            <div class="care-content">
-                <p>Our facility provides private rooms that offer the perfect blend of comfort and independence, ensuring that your loved ones feel at home while receiving the care they need.</p>
-            </div>
-        </div>
-        <div class="care-item">
-            <div class="icon-container">
-                <i class="fas fa-utensils"></i> 
-                <h3>Cooked Meals</h3>
-            </div>
-            <div class="care-content">
-                <p>We prepare daily, nutritious home-cooked meals tailored to meet the dietary needs and preferences of our residents, promoting their overall health and well-being.</p>
-            </div>
-        </div>
-        <div class="care-item">
-            <div class="icon-container">
-                <i class="fas fa-dumbbell"></i>
-                <h3>Social Activities</h3>
-            </div>
-            <div class="care-content">
-                <p>Our diverse range of recreational and social activities keeps residents active, engaged, and socially connected, contributing to their mental and emotional well-being.</p>
-            </div>
-        </div>
-        <div class="care-item">
-            <div class="icon-container">
-                <i class="fas fa-broom"></i>
-                <h3>Housekeeping Services</h3>
-            </div>
-            <div class="care-content">
-                <p>We take care of all household chores with our thorough housekeeping services, allowing your loved ones to enjoy a clean, well-maintained living environment without the hassle.</p>
-            </div>
-        </div>
-        <div class="care-item">
-            <div class="icon-container">
-                <i class="fas fa-users"></i>
-                <h3>Supportive Community</h3>
-            </div>
-            <div class="care-content">
-                <p>At Noble Assisted Care, your loved ones will be part of a warm and supportive community where they can form meaningful connections and enjoy the company of fellow retirees.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-        </div>
-
-        <div class="container_form" id="contactus">
-            <span class="big-circle"></span>
-            <div class="form">
-              <div class="contact-info">
-                <h3 class="title">Let's get in touch</h3>
-                <p class="text">
-                  Contact with Diana Pantea
-                  Owner / Admissission Coordinator
-                </p>
-      
-                <div class="info">
-                  <div class="information">
-                    <i class="fas fa-map-marker-alt"></i> &nbsp &nbsp
-      
-                    <p> 1150 Bradley Dr, Troy, Mi 48085 </p>
-                  </div> 
-                  <div class="information">
-                    <i class="fas fa-envelope"></i> &nbsp &nbsp
-                    <p>info@nobleassistedcare.com</p>
-                  </div>
-                  <div class="information">
-                    <i class="fas fa-phone"></i>&nbsp&nbsp
-                    <p>(248) 269-3296</p>
-                  </div>
+            <div class="contact_basic">
+                <h2> Enter Your Information Below, and We Will Contact You </h2>
+                <div class="username">
+                    <div class="info">
+                        <h3>First name <mark>(Required)</mark></h3>
+                        <input type="First Name">
+                    </div>
+                    <div class="info">
+                        <h3>Last name <mark>(Optional)</mark></h3>
+                        <input type="Last Name">
+                    </div>
                 </div>
-              </div>
-      
-              <div class="contact-form">
-                <span class="circle one"></span>
-                <span class="circle two"></span>
-      
-                <form action="index.html" autocomplete="off">
-                  <h3 class="title">Contact us</h3>
-                  <div class="input-container">
-                    <input type="text" name="name" class="input" />
-                    <label for="">Username</label>
-                    <span>Username</span>
-                  </div>
-                  <div class="input-container">
-                    <input type="email" name="email" class="input" />
-                    <label for="">Email</label>
-                    <span>Email</span>
-                  </div>
-                  <div class="input-container">
-                    <input type="tel" name="phone" class="input" />
-                    <label for="">Phone</label>
-                    <span>Phone</span>
-                  </div>
-                  <div class="input-container textarea">
-                    <textarea name="message" class="input"></textarea>
-                    <label for="">Message</label>
-                    <span>Message</span>
-                  </div>
-                  <input type="submit" value="Send" class="btn" />
-                </form>
-              </div>
+                <div class="information_collect">
+                    <div class="info">
+                        <h3>Email address <mark>(Optional)</mark></h3>
+                        <input type="Enter your email">
+                    </div>
+                    <div class="info">
+                        <h3>Phione number <mark>(Required)</mark></h3>
+                        <input type="Enter your phone number">
+                    </div>
+                </div>
+                <div class="message">
+                    <h3>Message</h3>
+                    <textarea name="message" id="message" cols="2" rows="10"></textarea>
+                </div>
+                <div class="send">
+                    <button> Send </button>
+                </div>
             </div>
-          </div>
-      
-    </div>
-    
-    <div class="end">
-        <div class="contatc_form">
-            <div class="link"> <a href=""> About Us </a> </div>
-            <div class="link"> <a href=""> Contact Us </a> </div>
         </div>
-        <div class="socialmedia">
-            <div class="link"> <a href=""> Facebook </a> </div>
-            <div class="link"> <a href=""> Twitter </a> </div>
-            <div class="link"> <a href=""> Facebook </a> </div>
+        <div class="end">
+            <div class="contatc_form">
+                <div class="link"> <a href="/aboutus.html"> About Us </a> </div>
+                <div class="link"> <a href="/index.html/#contactus"> Contact Us </a> </div>
+            </div>
+            <div class="socialmedia">
+                <div class="link"> <a href=""> Facebook </a> </div>
+                <div class="link"> <a href=""> Twitter </a> </div>
+                <div class="link"> <a href=""> Facebook </a> </div>
+            </div>
         </div>
-    </div>
-    <div class="copyrights">
-        <p>Copyright 2024 by NobleAssistedCare. </p>
-        <p>All Rights Reserved. </p>
-    </div>
-    <script src="script.js"></script>
+        <div class="copyrights">
+            <p>Copyright 2024 by NobleAssistedCare. </p>
+            <p>All Rights Reserved. </p>
+        </div>
+        <script src="script.js"></script>
 </body>
+
 </html>
